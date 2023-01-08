@@ -1,0 +1,293 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: var(--background-color);
+}
+
+:root {
+  --primary-color: #116519;
+  --secondary-color: #FFDB95;
+  --background-color: #FFFAED;
+  --text-color: #3c3c3c;
+  --border-radius: 0.625em;
+}
+
+.container {
+  max-width: 77.5em;
+  margin: 0 auto;
+}
+
+main,
+header,
+section,
+footer {
+  padding: 0 6.25em;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  max-width: 35.8125rem;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button {
+  padding: 0.625em 1.25em;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.button.pri {
+  color: white;
+  background: var(--primary-color);
+}
+.button.sec {
+  background: var(--secondary-color);
+}
+
+header {
+  transition: all 300ms ease-in;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  background-color: var(--background-color);
+  z-index: 99;
+}
+header:hover {
+  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25em 0;
+  align-items: center;
+}
+header .container .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 3.125em;
+}
+header .container nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5em;
+}
+header .container nav ul li {
+  transition: all 300ms ease-in;
+  position: relative;
+}
+header .container nav ul li::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -0.4em;
+  background-color: black;
+  width: 0.625em;
+  height: 0.2em;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+header .container nav ul li:hover::before {
+  width: 50%;
+  opacity: 1;
+  background-color: black;
+}
+header .container nav ul li.active a {
+  font-weight: 700;
+}
+header .container nav ul li.active::before {
+  width: 50%;
+  opacity: 1;
+  background-color: var(--primary-color);
+}
+header .container nav ul li a {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+header .container nav ul li a:hover {
+  font-weight: 700;
+}
+
+main .container {
+  padding-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+main .container .left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+main .container .left-col p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  max-width: 28.75em;
+  color: var(--text-color);
+  margin-top: 0.625em;
+}
+main .container .left-col .cta {
+  display: flex;
+  gap: 0.625em;
+}
+main .container .left-col .cta .secondary-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.625em;
+  border: none;
+  background: none;
+  transition: all 300ms ease-in;
+}
+main .container .left-col .cta .secondary-cta:hover {
+  gap: 1em;
+  background-color: var(--secondary-color);
+}
+main .container .left-col .svg {
+  display: flex;
+  align-items: center;
+  gap: 2.1875em;
+}
+main .container .right-col {
+  display: flex;
+  gap: 2.5em;
+}
+main .container .right-col div {
+  border-radius: var(--border-radius);
+  padding: 1.25em;
+  max-width: 18.4375em;
+  height: 31.25em;
+  background-color: var(--secondary-color);
+}
+main .container .right-col div:last-of-type {
+  background-color: var(--primary-color);
+}
+main .container .right-col div img {
+  filter: drop-shadow(-0.625em 1.25em 1.25em rgba(0, 0, 0, 0.25));
+}
+
+.image-gallery .container {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  align-items: center;
+  justify-content: center;
+}
+.image-gallery .container .images {
+  display: grid;
+  grid-template-areas: "vertical horizontal horizontal" "vertical space spa";
+  gap: 1.25em;
+}
+.image-gallery .container .images img {
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+.image-gallery .container .images img:nth-of-type(1) {
+  grid-area: vertical;
+}
+.image-gallery .container .images img:nth-of-type(2) {
+  grid-area: horizontal;
+}
+
+.products .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  padding-top: 6.25em;
+}
+.products .container .categories {
+  display: flex;
+  gap: 1.25em;
+}
+.products .container .cards {
+  display: flex;
+  gap: 1.25em;
+  width: 100%;
+}
+.products .container .cards > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.products .container .cards > div .image {
+  height: 12.1875em;
+  width: 100%;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background-color: red;
+}
+.products .container .cards > div .product-informations {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25em;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.products .container .cards > div .product-informations .left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125em;
+  justify-content: space-between;
+  height: 100%;
+}
+.products .container .cards > div .product-informations .left-col p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+.products .container .cards > div .product-informations .right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.products .container .cards > div .product-informations .right-col .price {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+.products .container .cards > div .product-informations .right-col button {
+  padding: 0.3125em 0.625em;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.3125em;
+  text-transform: uppercase;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
