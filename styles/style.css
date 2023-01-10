@@ -39,6 +39,14 @@ h1 {
   max-width: 35.8125rem;
 }
 
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
 h3 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -78,9 +86,6 @@ header {
   background-color: var(--background-color);
   z-index: 99;
 }
-header:hover {
-  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
-}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -114,7 +119,7 @@ header .container nav ul li::before {
   width: 0.625em;
   height: 0.2em;
   opacity: 0;
-  transition: all 300ms ease-in;
+  transition: width 300ms ease-in;
 }
 header .container nav ul li:hover::before {
   width: 50%;
@@ -235,10 +240,13 @@ main .container .right-col div img {
   display: flex;
   gap: 1.25em;
 }
+.products .container .categories button:nth-of-type(n+2) {
+  background-color: transparent;
+  border: 1px solid black;
+}
 .products .container .cards {
   display: flex;
   gap: 1.25em;
-  width: 100%;
 }
 .products .container .cards > div {
   flex: 1;
@@ -251,37 +259,38 @@ main .container .right-col div img {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background-color: red;
 }
-.products .container .cards > div .product-informations {
+.products .container .cards > div .product-information {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   padding: 1.25em;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-.products .container .cards > div .product-informations .left-col {
+.products .container .cards > div .product-information .left-col {
   display: flex;
   flex-direction: column;
   gap: 0.3125em;
   justify-content: space-between;
   height: 100%;
 }
-.products .container .cards > div .product-informations .left-col p {
+.products .container .cards > div .product-information .left-col p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 150%;
   color: var(--text-color);
 }
-.products .container .cards > div .product-informations .right-col {
+.products .container .cards > div .product-information .right-col {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.products .container .cards > div .product-informations .right-col .price {
+.products .container .cards > div .product-information .right-col .price {
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
 }
-.products .container .cards > div .product-informations .right-col button {
+.products .container .cards > div .product-information .right-col button {
   padding: 0.3125em 0.625em;
   font-size: 0.875rem;
   font-family: "Inter", sans-serif;
@@ -290,4 +299,244 @@ main .container .right-col div img {
   background-color: var(--secondary-color);
   font-weight: 700;
   border: none;
+}
+
+.explanation .container {
+  max-width: 64.375em;
+  display: flex;
+  gap: 100px;
+  margin-top: 5em;
+}
+.explanation .container .left-col {
+  width: 26.3125em;
+  position: relative;
+}
+.explanation .container .left-col div {
+  width: 25em;
+  height: 35.125em;
+  position: relative;
+  border-radius: 100em;
+  overflow: hidden;
+  background-image: url(/images/Group\ 8.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.explanation .container .left-col div img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 353.27px;
+  height: 538.61px;
+  transition: all 300ms;
+}
+.explanation .container .left-col div:hover img {
+  width: 373px;
+  height: 570px;
+}
+.explanation .container .left-col svg {
+  position: absolute;
+  right: -20px;
+  bottom: 135px;
+  z-index: 10;
+}
+.explanation .container .right-col {
+  margin: auto 0 60px;
+}
+.explanation .container .right-col p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+  margin-top: 8em;
+}
+.services .container h2 {
+  grid-column: 1/-1;
+}
+.services .container .cards {
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms ease-in;
+}
+.services .container .cards .image {
+  height: 12.1875em;
+  width: 100%;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background-color: red;
+}
+.services .container .cards .product-information {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 1.25em;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.services .container .cards .product-information .left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125em;
+  justify-content: space-between;
+  height: 100%;
+}
+.services .container .cards .product-information .left-col p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+.services .container .cards .product-information .right-col {
+  padding: 10px;
+  transition: all 300ms ease-in;
+}
+.services .container .cards:hover .right-col {
+  padding: 10px 0;
+}
+
+.people .container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+.people .container div {
+  width: 190px;
+  height: 570px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 20px;
+  transition: all 300ms ease-in;
+}
+.people .container div:nth-of-type(1) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/blake-barlow-G9JxeWPvBA8-unsplash.png);
+  background-size: cover;
+  background-position: 50%;
+}
+.people .container div:nth-of-type(1):hover {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/blake-barlow-G9JxeWPvBA8-unsplash.png);
+  background-size: cover;
+  background-position: 50%;
+  padding: 40px 20px;
+}
+.people .container div:nth-of-type(2) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/john-torcasio-tgVm0tkbf1U-unsplash\ 1.png);
+  background-size: cover;
+  background-position: 50%;
+}
+.people .container div:nth-of-type(2):hover {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/john-torcasio-tgVm0tkbf1U-unsplash\ 1.png);
+  background-size: cover;
+  background-position: 50%;
+  padding: 40px 20px;
+}
+.people .container div:nth-of-type(3) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
+  background-size: cover;
+  background-position: 50%;
+}
+.people .container div:nth-of-type(3):hover {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
+  background-size: cover;
+  background-position: 50%;
+  padding: 40px 20px;
+}
+.people .container div:nth-of-type(4) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/brazil-1368806_1280.png);
+  background-size: cover;
+  background-position: 50%;
+}
+.people .container div:nth-of-type(4):hover {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/brazil-1368806_1280.png);
+  background-size: cover;
+  background-position: 50%;
+  padding: 40px 20px;
+}
+.people .container div p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0);
+  transition: all 300ms ease-in;
+}
+.people .container div:hover {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
+  background-size: cover;
+  background-position: 50%;
+  padding: 40px 20px;
+}
+.people .container div:hover p {
+  color: #ffffff;
+}
+
+.ceo .container {
+  max-width: 64.375em;
+  display: flex;
+  gap: 100px;
+  margin-top: 5em;
+}
+.ceo .container .left-col {
+  width: 26.3125em;
+  position: relative;
+  transform: scaleX(-1);
+}
+.ceo .container .left-col div {
+  width: 25em;
+  height: 35.125em;
+  position: relative;
+  border-radius: 100em;
+  overflow: hidden;
+  background-image: url(/images/Group\ 8.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.ceo .container .left-col div img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 353.27px;
+  height: 538.61px;
+  transition: all 300ms;
+}
+.ceo .container .left-col div:hover img {
+  width: 373px;
+  height: 570px;
+}
+.ceo .container .left-col svg {
+  position: absolute;
+  right: -20px;
+  bottom: 135px;
+  z-index: 10;
+}
+.ceo .container .right-col {
+  margin: auto 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+.ceo .container .right-col p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
