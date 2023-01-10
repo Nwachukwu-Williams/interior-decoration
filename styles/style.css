@@ -43,7 +43,7 @@ h2 {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -51,7 +51,7 @@ h3 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #000000;
 }
@@ -242,7 +242,7 @@ main .container .right-col div img {
 }
 .products .container .categories button:nth-of-type(n+2) {
   background-color: transparent;
-  border: 1px solid black;
+  border: 0.0625em solid black;
 }
 .products .container .cards {
   display: flex;
@@ -263,7 +263,7 @@ main .container .right-col div img {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.625em;
   padding: 1.25em;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
@@ -277,7 +277,7 @@ main .container .right-col div img {
 .products .container .cards > div .product-information .left-col p {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   color: var(--text-color);
 }
@@ -304,11 +304,11 @@ main .container .right-col div img {
 .explanation .container {
   max-width: 64.375em;
   display: flex;
-  gap: 100px;
+  gap: 6.25em;
   margin-top: 5em;
 }
 .explanation .container .left-col {
-  width: 26.3125em;
+  width: 26.3em;
   position: relative;
 }
 .explanation .container .left-col div {
@@ -325,37 +325,37 @@ main .container .right-col div img {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 353.27px;
-  height: 538.61px;
+  width: 22.1em;
+  height: 33.7em;
   transition: all 300ms;
 }
 .explanation .container .left-col div:hover img {
-  width: 373px;
-  height: 570px;
+  width: 23.3em;
+  height: 35.6em;
 }
 .explanation .container .left-col svg {
   position: absolute;
-  right: -20px;
-  bottom: 135px;
+  right: -1.25em;
+  bottom: 8.4em;
   z-index: 10;
 }
 .explanation .container .right-col {
-  margin: auto 0 60px;
+  margin: auto 0 3.75em;
 }
 .explanation .container .right-col p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: var(--text-color);
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 .services .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 20px;
+  gap: 1.9em 1.25em;
   margin-top: 8em;
 }
 .services .container h2 {
@@ -376,7 +376,7 @@ main .container .right-col div img {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.625em;
   padding: 1.25em;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
@@ -390,32 +390,32 @@ main .container .right-col div img {
 .services .container .cards .product-information .left-col p {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   color: var(--text-color);
 }
 .services .container .cards .product-information .right-col {
-  padding: 10px;
+  padding: 0.625em;
   transition: all 300ms ease-in;
 }
 .services .container .cards:hover .right-col {
-  padding: 10px 0;
+  padding: 0.625em 0;
 }
 
 .people .container {
   display: flex;
-  gap: 20px;
+  gap: 1.25em;
   justify-content: center;
   margin-top: 10em;
   margin-bottom: 10em;
 }
 .people .container div {
-  width: 190px;
-  height: 570px;
+  width: 11.9em;
+  height: 35.6em;
   border-radius: var(--border-radius);
   display: flex;
   align-items: flex-end;
-  padding: 0 20px;
+  padding: 0 1.25em;
   transition: all 300ms ease-in;
 }
 .people .container div:nth-of-type(1) {
@@ -424,11 +424,11 @@ main .container .right-col div img {
   background-position: 50%;
 }
 .people .container div:nth-of-type(1):hover {
-  width: 380px;
+  width: 23.8em;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/blake-barlow-G9JxeWPvBA8-unsplash.png);
   background-size: cover;
   background-position: 50%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 .people .container div:nth-of-type(2) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/john-torcasio-tgVm0tkbf1U-unsplash\ 1.png);
@@ -436,11 +436,11 @@ main .container .right-col div img {
   background-position: 50%;
 }
 .people .container div:nth-of-type(2):hover {
-  width: 380px;
+  width: 23.8em;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/john-torcasio-tgVm0tkbf1U-unsplash\ 1.png);
   background-size: cover;
   background-position: 50%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 .people .container div:nth-of-type(3) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
@@ -448,11 +448,11 @@ main .container .right-col div img {
   background-position: 50%;
 }
 .people .container div:nth-of-type(3):hover {
-  width: 380px;
+  width: 23.8em;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
   background-size: cover;
   background-position: 50%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 .people .container div:nth-of-type(4) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/brazil-1368806_1280.png);
@@ -460,26 +460,26 @@ main .container .right-col div img {
   background-position: 50%;
 }
 .people .container div:nth-of-type(4):hover {
-  width: 380px;
+  width: 23.8em;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/brazil-1368806_1280.png);
   background-size: cover;
   background-position: 50%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 .people .container div p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: rgba(255, 255, 255, 0);
   transition: all 300ms ease-in;
 }
 .people .container div:hover {
-  width: 380px;
+  width: 23.8em;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.6039215686) 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
   background-size: cover;
   background-position: 50%;
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
 }
 .people .container div:hover p {
   color: #ffffff;
@@ -488,7 +488,7 @@ main .container .right-col div img {
 .ceo .container {
   max-width: 64.375em;
   display: flex;
-  gap: 100px;
+  gap: 6.25em;
   margin-top: 5em;
 }
 .ceo .container .left-col {
@@ -510,33 +510,54 @@ main .container .right-col div img {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 353.27px;
-  height: 538.61px;
+  width: 22.1em;
+  height: 33.7em;
   transition: all 300ms;
 }
 .ceo .container .left-col div:hover img {
-  width: 373px;
-  height: 570px;
+  width: 23.3em;
+  height: 35.6em;
 }
 .ceo .container .left-col svg {
   position: absolute;
-  right: -20px;
-  bottom: 135px;
+  right: -1.25em;
+  bottom: 8.4em;
   z-index: 10;
 }
 .ceo .container .right-col {
-  margin: auto 0 60px;
+  margin: auto 0 3.75em;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25em;
   align-items: flex-end;
 }
 .ceo .container .right-col p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: var(--text-color);
   text-align: right;
+}
+
+.products:last-of-type {
+  background-image: url(/images/Layer\ 2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 57.4em;
+  display: flex;
+  align-items: center;
+  margin-top: 10em;
+}
+.products:last-of-type .container {
+  margin-top: 0%;
+}
+
+footer {
+  height: 62.5em;
+  background: url(/images/Vector.svg), var(--primary-color);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
 }/*# sourceMappingURL=style.css.map */

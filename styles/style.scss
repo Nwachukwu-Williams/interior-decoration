@@ -43,7 +43,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -51,7 +51,7 @@ h3 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #000000;
 }
@@ -247,7 +247,7 @@ main .container {
         gap: 1.25em;
         button:nth-of-type(n+2) {
             background-color: transparent;
-            border: 1px solid black;
+            border: 0.0625em solid black;
         }
     }
     .cards {
@@ -267,7 +267,7 @@ main .container {
                 background-color: white;
                 display: flex;
                 justify-content: space-between;
-                gap: 10px;
+                gap: 0.625em;
                 padding: 1.25em;
                 border-radius: 0 0 var(--border-radius) var(--border-radius);
                 .left-col {
@@ -279,7 +279,7 @@ main .container {
                     p {
                         font-family: 'Inter', sans-serif;
                         font-style: normal;
-                        font-size: 14px;
+                        font-size: 0.875rem;
                         line-height: 150%;
                         color: var(--text-color);
                     }
@@ -309,12 +309,12 @@ main .container {
 }
 
 .explanation .container {
-    max-width: calc(1030em / 16);
+    max-width: 64.375em;
     display: flex;
-    gap: 100px;
+    gap: 6.25em;
     margin-top: 5em;
     .left-col {
-        width: calc(421em / 16);
+        width: 26.3em;
         position: relative;
         div {
             width: calc(400em / 16);
@@ -332,32 +332,32 @@ main .container {
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                width: 353.27px;
-                height: 538.61px;
+                width: 22.1em;
+                height: 33.7em;
                 transition: all 300ms;
             }
             &:hover img {
-                width: 373px;
-                height: 570px;
+                width: 23.3em;
+                height: 35.6em;
             }
         }
         svg {
             position: absolute;
-            right: -20px;
-            bottom: 135px;
+            right: -1.25em;
+            bottom: 8.4em;
             z-index: 10;
         }
     }
     .right-col {
-        margin: auto 0 60px;
+        margin: auto 0 3.75em;
         p {
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 150%;
             color: var(--text-color);
-            margin-top: 20px;
+            margin-top: 1.25em;
         }
     }
 }
@@ -365,7 +365,7 @@ main .container {
 .services .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px;
+    gap: 1.9em 1.25em;
     margin-top: 8em;
     h2 {
         grid-column: 1 / -1;
@@ -384,7 +384,7 @@ main .container {
             background-color: white;
             display: flex;
             justify-content: space-between;
-            gap: 10px;
+            gap: 0.625em;
             padding: 1.25em;
             border-radius: 0 0 var(--border-radius) var(--border-radius);
             .left-col {
@@ -396,19 +396,19 @@ main .container {
                 p {
                     font-family: 'Inter', sans-serif;
                     font-style: normal;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     line-height: 150%;
                     color: var(--text-color);
                 }
             }
             .right-col {
-                padding: 10px;
+                padding: 0.625em;
                 transition: all 300ms ease-in;
             }
         }
         &:hover {
             .right-col {
-                padding: 10px 0;
+                padding: 0.625em 0;
             }
         }
     }
@@ -416,28 +416,28 @@ main .container {
 
 .people .container {
     display: flex;
-    gap: 20px;
+    gap: 1.25em;
     justify-content: center;
     margin-top: 10em;
     margin-bottom: 10em;
     div {
-        width: 190px;
-        height: 570px;
+        width: 11.9em;
+        height: 35.6em;
         border-radius: var(--border-radius);
         display: flex;
         align-items: flex-end;
-        padding: 0 20px;
+        padding: 0 1.25em;
         transition: all 300ms ease-in;
         &:nth-of-type(1) {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/blake-barlow-G9JxeWPvBA8-unsplash.png);
             background-size: cover;
             background-position: 50%;
             &:hover {
-                width: calc(190px * 2);
+                width: calc(11.9em * 2);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #0000009a 100%), url(/images/blake-barlow-G9JxeWPvBA8-unsplash.png);
                 background-size: cover;
                 background-position: 50%;
-                padding: 40px 20px;
+                padding: 2.5em 1.25em;
             }
         }
         &:nth-of-type(2) {
@@ -445,11 +445,11 @@ main .container {
             background-size: cover;
             background-position: 50%;
             &:hover {
-                width: calc(190px * 2);
+                width: calc(11.9em * 2);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #0000009a 100%), url(/images/john-torcasio-tgVm0tkbf1U-unsplash\ 1.png);
                 background-size: cover;
                 background-position: 50%;
-                padding: 40px 20px;
+                padding: 2.5em 1.25em;
             }
         }
         &:nth-of-type(3) {
@@ -457,11 +457,11 @@ main .container {
             background-size: cover;
             background-position: 50%;
             &:hover {
-                width: calc(190px * 2);
+                width: calc(11.9em * 2);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #0000009a 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
                 background-size: cover;
                 background-position: 50%;
-                padding: 40px 20px;
+                padding: 2.5em 1.25em;
             }
         }
         &:nth-of-type(4) {
@@ -469,27 +469,27 @@ main .container {
             background-size: cover;
             background-position: 50%;
             &:hover {
-                width: calc(190px * 2);
+                width: calc(11.9em * 2);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #0000009a 100%), url(/images/brazil-1368806_1280.png);
                 background-size: cover;
                 background-position: 50%;
-                padding: 40px 20px;
+                padding: 2.5em 1.25em;
             }
         }
         p {
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 36px;
+            font-size: 2.25rem;
             color: #ffffff00;
             transition: all 300ms ease-in;
         }
         &:hover {
-            width: calc(190px * 2);
+            width: calc(11.9em * 2);
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #0000009a 100%), url(/images/joseph-gonzalez-iFgRcqHznqg-unsplash.png);
             background-size: cover;
             background-position: 50%;
-            padding: 40px 20px;
+            padding: 2.5em 1.25em;
             p {
                 color: #ffffff;
             }
@@ -500,7 +500,7 @@ main .container {
 .ceo .container {
     max-width: calc(1030em / 16);
     display: flex;
-    gap: 100px;
+    gap: 6.25em;
     margin-top: 5em;
     .left-col {
         width: calc(421em / 16);
@@ -522,36 +522,57 @@ main .container {
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                width: 353.27px;
-                height: 538.61px;
+                width: 22.1em;
+                height: 33.7em;
                 transition: all 300ms;
             }
             &:hover img {
-                width: 373px;
-                height: 570px;
+                width: 23.3em;
+                height: 35.6em;
             }
         }
         svg {
             position: absolute;
-            right: -20px;
-            bottom: 135px;
+            right: -1.25em;
+            bottom: 8.4em;
             z-index: 10;
         }
     }
     .right-col {
-        margin: auto 0 60px;
+        margin: auto 0 3.75em;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25em;
         align-items: flex-end;
         p {
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 150%;
             color: var(--text-color);
             text-align: right;
         }
     }
+}
+
+.products:last-of-type {
+    background-image: url(/images/Layer\ 2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 57.4em;
+    display: flex;
+    align-items: center;
+    margin-top: 10em;
+    .container {
+        margin-top: 0%;
+    }
+}
+
+footer {
+    height: 62.5em;
+    background: url(/images/Vector.svg), var(--primary-color);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
 }
